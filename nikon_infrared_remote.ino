@@ -2,6 +2,10 @@
 
 void setup() {
   pinMode(IR_LED_PIN, OUTPUT);
+  doTheSequence();
+}
+
+void doTheSequence() {
   doTheBurst(76);
   delay(27);
   delayMicroseconds(810);
